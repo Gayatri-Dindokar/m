@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musicaly</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+
+        <div class="overlay">
+            <nav>
+                <div class="div_main">
+
+
+                    <div class="frame">
+                        <figure id="musicaly_img"><img src="asset/Musicly.png" alt="" /></figure>
+                        <p>
+                            <img class="icon" src="asset/home.svg" alt="" /><span id="home" class="libPod-Content">Home</span>
+                        </p>
+                        <p>
+                            <img class="icon" src="asset/headphones.svg" alt="" /><span class="libPod-Content">Library</span>
+                        </p>
+                        <p>
+                            <img class="icon" src="asset/podcasts.svg" alt="" /><span class="libPod-Content">Podcast</span>
+                        </p>
+                    </div>
+
+
+
+                    <div class="iconlist">
+                        <div class="search-notify">
+                            <div class="search_button">
+                                <input type="search" class="search_input" placeholder="Search Song, Singer or Album" /><span class="search_icon"><img src="asset/search.svg" alt="" /></span>
+                            </div>
+                            <div class="notification_icon">
+                                <span><img src="asset/badge.png" alt="" /> </span>
+                            </div>
+                        </div>
+                        <div class="expand_iconDiv">
+                            <span><img src="asset/profile.png" class="img_icon" alt="" /></span>
+                            <div class="dropdown"> <span><img src="asset/expand_more.svg" alt="" class="expand_arrow"
+                                    onclick="clickable()" /></span>
+                                <div class="dropdown-content">
+                                    <span class="dropdown_icon"><img class="dropdown_icon1" src="asset/account_circle.svg"
+                                        alt=""><a href="#">My Account</a></span>
+                                    <span class="dropdown_icon"><img class="dropdown_icon1" src="asset/grade.svg" alt=""><a
+                                        href="#">Premium</a></span>
+                                    <span class="dropdown_icon"> <img class="dropdown_icon1" src="asset/logout.svg"
+                                        alt=""><a href="#">Log Out</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="main-section">
+                <section>
+                     <div class="carousel">
+                        <div class="arrow_back"><button onclick="goPrev()"><img src="asset/darkpreviousarrow.svg" alt="" ></button></div>
+
+                        <div class="carousel_cards">
+                            <div class="swiper-slide"><span><img class="sl_img left-tilt-img swiper-img  slide" src="asset/uddjaa.jpg" alt=""></span>
+                                 <!-- <div class="sl_shadow" style="color: white;">hello</div>  -->
+                            </div>
+
+                            <div class="carousel_cards"><span><img id="middle_img" class="sl_img swiper-img slide" src="asset/heeriye.jpg" alt=""></span>
+                                <div class="swiper-slide"></div>
+                            </div>
+
+                            <div class="swiper-slide"><span><img class="sl_img right-tilt-img swiper-img slide" src="asset/hukum.jpg" alt=""></span>
+                                 <!-- <div class="sl_shadow" style="color: white;">hello</div>  -->
+                            </div>
+                        </div>
+
+                        <div class="arrow_forward" > <button onclick="goNext()"><img src="asset/arrow_forward_ios.svg" alt=""></button>
+                        </div>
+                    </div> 
+                    <!-- <div class="carousel mySwiper ">
+                        
+                        <div class="carousel_cards">
+                            <div class="swiper-pagination">
+                                <button type="button"><img src="asset/arrow_back_ios_new.svg" alt=""></button>
+                            </div>
+                          <div class="swiper-slide">
+                            <img src="asset/uddjaa.jpg"  class="swiper-img"/>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="asset/heeriye.jpg" class="swiper-img"/>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="asset/hukum.jpg" class="swiper-img"/>
+                          </div>
+
+                          <div class="swiper-pagination">
+                            <button type="button"><img src="asset/arrow_forward_ios.svg" alt=""></button>
+                        </div>
+                         
+                        </div>
+                       
+                    </div>
+                     -->
+                </section>
+                <section>
+                    <div class="treanding_song-heading">
+                        <h4>Trending Songs</h4>
+
+                        <div class="see_all_btn-div"> <span><img src="asset/arrow_back_ios_new.svg" alt=""></span>
+                            <span><img src="asset/arrow_forward_ios.svg" alt=""></span>
+                            <div><button class="see-all-btn">SEE ALL</button></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+
+                    <div class="cover">
+                        <div class="box">
+
+                            <div class="container"><img src="asset/hukum 170px.jpg" alt="" class="cover-images">
+                                <div class="middle">
+                                    <div class="pause-img"><img src="asset/pause.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="heading-para">
+                                <h4>Heeriye (feat. Arijit Singh)</h4>
+                                <p>Jasleen Royal, Arijit Singh</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="asset/music playing.gif" alt="" class="gif-css disp-none">
+                            <div class="container"><img src="asset/heeriye 170px.jpg" alt="" class="cover-images">
+                                <div class="middle">
+                                    <div class="pause-img"><img src="asset/pause.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="heading-para">
+                                <h4>Heeriye (feat. Arijit Singh)</h4>
+                                <p>Jasleen Royal, Arijit Singh</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="container"> <img src="asset/uddjaa 170px.jpg" alt="" class="cover-images">
+                                <div class="middle">
+                                    <div class="pause-img"><img src="asset/pause.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="heading-para">
+                                <h4>Udd Jaa Kaale Kaava</h4>
+                                <p>Udit Narayan</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="container">
+                                <img src="asset/hukum 170px.jpg" alt="" class="cover-images">
+                                <div class="middle">
+                                    <div class="pause-img"><img src="asset/pause.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="heading-para">
+                                <h4>Hukum</h4>
+                                <p>Anirudh Ravichander</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="container"> <img src="asset/heeriye 170px.jpg" alt="" class="cover-images">
+                                <div class="middle">
+                                    <div class="pause-img"><img src="asset/pause.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="heading-para">
+                                <h4>Heeriye (feat. Arijit Singh)</h4>
+                                <p>Jasleen Royal, Arijit Singh</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="container"> <img src="asset/uddjaa 170px.jpg" alt="" class="cover-images">
+                                <div class="middle">
+                                    <div class="pause-img"><img src="asset/pause.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="heading-para">
+                                <h4>Udd Jaa Kaale Kaava</h4>
+                                <p>Udit Narayan</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        </div>
+        <section>
+            <div>
+                <div class="lyrics" style="display: none;">
+                    <nav>
+                        <div class="nav-blur">
+                            <img src="asset/expand_more.svg" alt="" class="down-arrow">
+                        </div>
+                    </nav>
+                    <div class="lyrics-main">
+                        <div class="heriye-heriye"></div>
+                        <div class="heriye-lyrics">
+                            <div class="con">
+                                <p>Heeriye, Heeriye, aa Heeriye, Heeriye, aa Teri hoke maraan Jind Jaan karaan Teri hoke maraan Jind Jaan karaan Heeriye, Heeriye, aa Heeriye, Heeriye, aa</p>
+                                <p> Neendan vi Tutt Tutt gaiyan, Chundi main Taare rahiyaan Sochan vich Teriyan paiyaaan Haaniyaaa
+                                </p>
+                                <p>
+                                    Saari saar raat Jaga ve Yadan nu Zikar Tera Ve Aaye kyun na aaye subha ve Haaniyaa
+                                </p>
+                                <p>Teri hoke maraan Jind Jaan karaan Teri hoke maraan Jind Jaan karaan Heeriye, Heeriye, aa Heeriye, Heeriye, aa</p>
+                                <p>
+
+                                    Chheti aa Chheti Sohne Raat na lange Aaja ve Aaja Sohne Raat na lange Chheti aa Chheti Sohne Raat na lange Aaja ve Aaja Sohne Raat na lange
+                                </p>
+                                <p>
+                                    Jad vi tenu takdi haan ve, Akhiyan vi shukar manave Kole aa door na jaave, haaniya
+                                </p>
+                                <p>
+                                    Palkaan di kar ke chhaanva Dil de tenu kol bithaanva Tak Tak tenu Khairan paanva, haaniya</p>
+                                <p>
+
+                                    teri... haaniya, teri teri... haaniya, teri
+                                </p>
+                                <p>Teri hoke maraan Jind Jaan karaan Teri hoke maraan Jind Jaan karaan Heeriye, Heeriye, aa Heeriye, Heeriye, aa</p>
+                                <p>
+                                    haaniya, teri haaniya teri
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <footer>
+                    </div>
+                    <div class="bottom">
+                        <input type="range" id="myProgressbar" value="0" name="range" min="0" max="100">
+        
+                        <div class="bottom_song_img">
+                            <div class="img-div"> <img src="asset/heeriye 170px.jpg" alt="" class="heeriye-img">
+                                <div class="song-tittle">
+                                    <h4>Heeriye (feat. Arijit Singh)</h4>
+                                    <p>Jasleen Royal, Arijit Singh</p>
+                                </div>
+                            </div>
+        
+                            <div class="bottom_icons_images">
+                                <img src="asset/skip_previous.svg" alt="" class="one">
+                                <img src="asset/play.svg" alt="" id="play-btn" class="playy play_btn  disp-none">
+                                <img src="asset/pause.svg" alt="" id="pause-btn" class="playy  pause-btn ">
+                                <img src="asset/skip_next.svg" alt="">
+                            </div>
+        
+                            <div class="bottom-btn">
+                                <button class="btn show">Show Lyrics</button>
+        
+        
+                                <div class="hide-btn"> <button class="btn hide disp-none">Hide Lyrics</button></div>
+                            </div>
+                        </div>
+        
+        
+        
+        
+                    </div>
+                    </footer>
+                </div>
+              
+
+            </div>
+        </section>
+
+        <footer>
+
+            </div>
+            <div class="bottom">
+                <input type="range" id="myProgressbar" value="0" name="range" min="0" max="100">
+
+                <div class="bottom_song_img">
+                    <div class="img-div"> <img src="asset/heeriye 170px.jpg" alt="" class="heeriye-img">
+                        <div class="song-tittle">
+                            <h4>Heeriye (feat. Arijit Singh)</h4>
+                            <p>Jasleen Royal, Arijit Singh</p>
+                        </div>
+                    </div>
+
+                    <div class="bottom_icons_images">
+                        <img src="asset/skip_previous.svg" alt="" class="one">
+                        <img src="asset/play.svg" alt="" id="play-btn" class="playy play_btn  disp-none">
+                        <img src="asset/pause.svg" alt="" id="pause-btn" class="playy  pause-btn ">
+                        <img src="asset/skip_next.svg" alt="">
+                    </div>
+
+                    <div class="bottom-btn">
+                        <button class="btn show">Show Lyrics</button>
+
+
+                        <div class="hide-btn"> <button class="btn hide disp-none">Hide Lyrics</button></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </footer>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
